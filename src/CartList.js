@@ -30,7 +30,7 @@ export default class CartList extends Component {
                   color="danger"
                   onClick={() => this.props.removeFromCart(cartItem.product)}
                 >
-                  Sil
+                   Sil
                 </Button>
               </td>
             </tr>
