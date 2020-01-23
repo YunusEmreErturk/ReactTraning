@@ -7,7 +7,7 @@ import alertify from "alertifyjs";
 import { Route, Switch } from "react-router-dom";
 import NotFound from "./NotFound";
 import CartList from "./CartList";
-
+// Component yapısı elden geçirildi.
 export default class App extends Component {
   state = {
     currentCategory: "",
