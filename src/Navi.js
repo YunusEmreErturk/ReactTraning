@@ -1,4 +1,5 @@
 import React, { useState,Component } from 'react';
+import {Link} from 'react-router-dom'
 
 import {
   Collapse,
@@ -11,6 +12,7 @@ import {
   NavbarText
 } from 'reactstrap';
 import CartSummary from './CartSummary';
+
 
 
   export default class Navi extends Component {
@@ -37,8 +39,12 @@ import CartSummary from './CartSummary';
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="mr-auto" navbar>
+
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink>
+                  <Link to="komplexform">Komplex Form</Link>
+                </NavLink>
+                
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>

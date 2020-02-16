@@ -7,6 +7,7 @@ import alertify from "alertifyjs";
 import { Route, Switch } from "react-router-dom";
 import NotFound from "./NotFound";
 import CartList from "./CartList";
+import KomplexForm from "./KomplexForm";
 // Component yapısı elden geçirildi.
 export default class App extends Component {
   state = {
@@ -96,6 +97,7 @@ export default class App extends Component {
                       removeFromCart={this.removeFromCart}
                     ></CartList>
                   )}></Route>
+                  <Route path="/komplexform" component={KomplexForm}></Route>
                 <Route component={NotFound}/>
               </Switch>
             </Col>
